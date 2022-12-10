@@ -1,0 +1,26 @@
+@import 'src/assets/styles/default_values';
+@import 'src/assets/styles/extends';
+
+.content {
+  height: 56px;
+  background: $search-bg;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $text-color;
+  @extend %font-base;
+
+  .container {
+    display: flex;
+    align-items: center;
+    margin-left: 18.62px;
+
+    p {
+      margin-left: 10.62px;
+
+      span {
+        color:$main-bg;
+        font-weight: bolder;
+      }
+    }
+  }
+}

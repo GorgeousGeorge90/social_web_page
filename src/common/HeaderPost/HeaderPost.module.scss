@@ -1,0 +1,55 @@
+@import 'src/assets/styles/default_values';
+@import 'src/assets/styles/extends';
+
+.header {
+  display: grid;
+  grid-template-columns: 48px 1fr 15.75px;
+  grid-template-rows: repeat(2, 24px);
+  grid-template-areas: 'logo name points'
+                       'logo info points';
+  padding: 16px;
+
+  .logo {
+      grid-area: logo;
+  }
+
+  p {
+    margin: 0;
+
+  }
+
+  .name {
+    color:$main-bg;
+    grid-area: name;
+    padding-left: 12px;
+    align-self: end;
+  }
+
+  .info {
+    padding-left: 12px;
+    display: flex;
+    text-align: center;
+    color:#8C8C8C;
+    @extend %font-base;
+
+    .point {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 2px;
+      background-color:$point-bg;
+      margin: auto 6px;
+    }
+
+    .gear {
+     display: flex;
+      img {
+        margin: auto 0;
+      }
+    }
+  }
+
+  .points {
+    grid-area: points;
+  }
+}

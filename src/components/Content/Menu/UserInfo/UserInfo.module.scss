@@ -1,0 +1,29 @@
+@import 'src/assets/styles/default_values';
+
+.user_info {
+
+
+  span {
+    padding-left: 12px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    li.spec {
+      width: 192px;
+      height: 32px;
+      background: $search-bg;
+      border-radius: 4px;
+    }
+
+    a {
+      display: flex;
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}

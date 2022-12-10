@@ -1,0 +1,20 @@
+@import 'src/assets/styles/default_values';
+@import 'src/assets/styles/extends';
+
+.news_post {
+  height: 165px;
+  background: $search-bg;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px 4px 0 0;
+  @extend %font-base;
+
+  .news {
+    text-align: left;
+    margin: 0 16px;
+    color: $text-color;
+
+    p {
+      margin: 0;
+    }
+  }
+}

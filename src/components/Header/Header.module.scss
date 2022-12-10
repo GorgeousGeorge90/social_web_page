@@ -1,0 +1,49 @@
+@import 'src/assets/styles/default_values';
+@import 'src/assets/styles/extends.scss';
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-bg;
+
+  .container {
+    width:$container;
+    display: flex;
+
+
+    .search {
+        input {
+          height: 32px;
+          width: 336px;
+          border: 1px solid $search-border;
+          border-radius: 4px;
+          box-sizing: border-box;
+          padding: 5px 30px 5px 12px;
+          background-image: url('../../assets/img/header/search.svg');
+          background-repeat: no-repeat;
+          background-color:$search-bg;
+          background-position: right 11.75px center;
+          @extend %font-base;
+        }
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) 2fr;
+      align-items: center;
+
+      .user {
+        text-align: center;
+
+      }
+
+      .panel {
+
+
+      }
+
+    }
+  }
+}

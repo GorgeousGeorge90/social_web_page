@@ -1,0 +1,31 @@
+@import 'src/assets/styles/default_values';
+
+.shortcuts {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 0 0 13.25px 0;
+  }
+
+  span {
+    padding-left: 12px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13.25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        display: flex;
+        text-decoration: none;
+        color: $text-color;
+      }
+    }
+  }
+}

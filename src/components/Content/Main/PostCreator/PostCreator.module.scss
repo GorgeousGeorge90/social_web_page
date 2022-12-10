@@ -1,0 +1,53 @@
+@import 'src/assets/styles/default_values';
+
+.post {
+  height: 192px;
+  background: $search-bg;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: grid;
+  grid-template-rows: 40px 1fr 1fr;
+
+  p {
+    margin: 0;
+  }
+
+  .header {
+    background-color: #F5F5F5;
+    border: 1px solid #D9D9D9;
+
+    p {
+      margin: 0 16px;
+    }
+  }
+
+  .container {
+    margin: 16px;
+
+    .footer {
+      display: flex;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+
+        li {
+          display: flex;
+          justify-content: start;
+          align-items: start;
+
+          button {
+            width: 134px;
+            height: 40px;
+            border: none;
+            border-radius: 48px;
+            background: $button-bg;
+          }
+
+        }
+      }
+    }
+  }
+}

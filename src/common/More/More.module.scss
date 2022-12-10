@@ -1,0 +1,17 @@
+@import 'src/assets/styles/default_values.scss';
+@import 'src/assets/styles/extends';
+
+
+.more {
+  a {
+    display: flex;
+    text-decoration: none;
+    color: $text-color;
+    @extend %font-base;
+
+    span {
+      color: $spec-color;
+      padding-left: 14.5px;
+    }
+  }
+}
