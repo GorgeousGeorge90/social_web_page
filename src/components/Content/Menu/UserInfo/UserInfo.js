@@ -1,9 +1,10 @@
 import styles from './UserInfo.module.scss';
-import {NavLink} from 'react-router-dom';
 import logo from '../../../../assets/img/content/menu/logo_sm.svg';
 import market from '../../../../assets/img/content/menu/market.svg';
 import profile from '../../../../assets/img/content/menu/profile.svg';
 import messages from '../../../../assets/img/content/menu/message.svg';
+import points from '../../../../assets/img/content/main/points.svg';
+import {MenuItem} from '../MenuItem/MenuItem';
 
 const UserInfo = ()=> {
     return(<div className={styles.user_info}>
@@ -14,23 +15,20 @@ const UserInfo = ()=> {
         <div className={styles.news}>
             <ul>
                 <li className={styles.spec}>
-                    <NavLink to={'/'}>
-                        <img src={profile} alt='pic'/>
-                        <span>News Feed</span>
-                        <span>...</span>
-                    </NavLink>
+                   <MenuItem img={profile}
+                             text={'News Feed'}
+                             img1={points}
+                   />
                 </li>
                 <li>
-                    <NavLink to={'/'}>
-                        <img src={messages} alt='pic'/>
-                        <span>Messages</span>
-                    </NavLink>
+                    <MenuItem img={messages}
+                              text={'Messages'}
+                    />
                 </li>
                 <li>
-                    <NavLink to={'/'}>
-                        <img src={market} alt='pic'/>
-                        <span>Marketplace</span>
-                    </NavLink>
+                    <MenuItem img={market}
+                              text={'Marketplace'}
+                    />
                 </li>
             </ul>
         </div>

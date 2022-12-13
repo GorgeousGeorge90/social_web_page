@@ -3,17 +3,18 @@
 
 .user_post {
   height: 571px;
-  background: $search-bg;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  background: $grey-1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   @extend %font-base;
+  position: relative;
 
   .advice {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     height: 88px;
     margin: 0 16px;
-    color: $text-color;
+    color: $grey-8;
 
     p {
       margin: 0;
@@ -21,6 +22,11 @@
 
     p.learn {
       align-self: end;
+    }
+
+    a {
+      text-decoration: none;
+      color: $blue-6;
     }
   }
 
@@ -34,17 +40,41 @@
 
     .like {
       align-self: start;
-      padding-left: 16px;
-      border-bottom: 1px solid black;
+      margin: 0 0 13.56px 16px;
+      color: $grey-8;
+      @extend %font-base;
+
+      :first-child {
+        padding-right: 5.75px;
+      }
     }
   }
 
   .footer {
+    margin: 0 16px;
+    border: 1px $grey-4;
+    border-style: solid none none none;
+
     ul {
       list-style: none;
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
+      padding: 0;
+
+      li {
+        display: flex;
+        gap: 11px;
+        @extend %font-base;
+        font-weight: 600;
+        color: $grey-8;
+      }
     }
+  }
+
+  .menu {
+    position: absolute;
+    bottom: 10px;
+    right: -60px;
+    z-index: 1;
   }
 }

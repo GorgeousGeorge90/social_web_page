@@ -1,27 +1,23 @@
 import styles from './Shortcuts.module.scss';
-import {NavLink} from 'react-router-dom';
 import cup from '../../../../assets/img/content/menu/cup.svg';
+import {MenuItem} from '../MenuItem/MenuItem';
 
 const Shortcuts = ()=>{
     return (<div className={styles.shortcuts}>
             <p><b>Shortcuts</b></p>
             <ul>
-                <li><NavLink to={'/'}>
-                    <img src={cup} alt='pic'/>
-                    <span>Product Design</span>
-                </NavLink></li>
-                <li><NavLink to={'/'}>
-                    <img src={cup} alt='pic'/>
-                    <span>UX & UI</span>
-                </NavLink></li>
-                <li><NavLink to={'/'}>
-                    <img src={cup} alt='pic'/>
-                    <span>Figma</span>
-                </NavLink></li>
-                <li><NavLink to={'/'}>
-                    <img src={cup} alt='pic'/>
-                    <span>Ant Design</span>
-                </NavLink></li>
+                <li><MenuItem img={cup}
+                              text={'Product Design'}
+                /></li>
+                <li><MenuItem img={cup}
+                              text={'UX & UI'}
+                /></li>
+                <li><MenuItem img={cup}
+                              text={'Figma'}
+                /></li>
+                <li><MenuItem img={cup}
+                              text={'Ant Design'}
+                /></li>
             </ul>
     </div>)
 }

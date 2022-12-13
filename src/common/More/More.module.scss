@@ -6,11 +6,11 @@
   a {
     display: flex;
     text-decoration: none;
-    color: $text-color;
+    color: $grey-8;
     @extend %font-base;
 
     span {
-      color: $spec-color;
+      color: $blue-6;
       padding-left: 14.5px;
     }
   }

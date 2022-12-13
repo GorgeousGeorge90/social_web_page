@@ -1,29 +1,63 @@
 @import 'src/assets/styles/default_values';
+@import 'src/assets/styles/extends';
 
 .user_info {
+  @extend %font-base;
 
+  .user {
+    display: flex;
+    align-items: center;
+    color: $grey-9;
+    gap: 8px;
+
+    :nth-child(2) {
+      padding: 0;
+    }
+  }
 
   span {
-    padding-left: 12px;
+    //padding-left: 12px;
   }
 
   ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     padding: 0;
 
+    :nth-child(odd) {
+          span {
+            //padding-left: 10.62px;
+          }
+    }
+
     li.spec {
-      width: 192px;
       height: 32px;
-      background: $search-bg;
+      width: 192px;
+      box-sizing: content-box;
+      background: $grey-1;
       border-radius: 4px;
+      padding: 6.63px 12.12px 0 10.62px;
+
+      :first-child {
+        display: flex;
+
+
+        :nth-child(3) {
+            flex-grow: 1;
+            align-self: center;
+            img {
+              float: right;
+            }
+        }
+      }
     }
 
     a {
       display: flex;
       text-decoration: none;
-      color: $text-color;
+      color: $grey-8;
     }
   }
 }

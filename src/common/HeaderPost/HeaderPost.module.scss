@@ -19,7 +19,7 @@
   }
 
   .name {
-    color:$main-bg;
+    color:$blue-8;
     grid-area: name;
     padding-left: 12px;
     align-self: end;
@@ -29,7 +29,7 @@
     padding-left: 12px;
     display: flex;
     text-align: center;
-    color:#8C8C8C;
+    color:$grey-7;
     @extend %font-base;
 
     .point {
@@ -37,7 +37,7 @@
       width: 4px;
       height: 4px;
       border-radius: 2px;
-      background-color:$point-bg;
+      background-color:$grey-6;
       margin: auto 6px;
     }
 

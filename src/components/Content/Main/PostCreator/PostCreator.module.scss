@@ -1,49 +1,74 @@
 @import 'src/assets/styles/default_values';
+@import 'src/assets/styles/extends';
 
 .post {
   height: 192px;
-  background: $search-bg;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  background: $grey-1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   display: grid;
   grid-template-rows: 40px 1fr 1fr;
+  @extend %font-base;
 
   p {
     margin: 0;
   }
 
   .header {
-    background-color: #F5F5F5;
-    border: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color:$grey-3;
+    border: 1px $grey-5;
+    border-style: none none solid none;
 
     p {
       margin: 0 16px;
+      color: $grey-8;
+      font-weight: 500;
     }
   }
 
   .container {
     margin: 16px;
 
+    .body {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border: 1px $grey-4;
+      padding-bottom: 16px;
+      border-style: none none solid none;
+
+      span {
+        color:$grey-7;
+      }
+    }
+
     .footer {
       display: flex;
+      align-items: start;
+      justify-content: start;
 
       ul {
         display: flex;
-        justify-content: center;
-        align-items: center;
         list-style: none;
+        gap: 8px;
+        padding: 0;
+        margin-top: 18px;
 
         li {
-          display: flex;
-          justify-content: start;
-          align-items: start;
 
           button {
             width: 134px;
             height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9.5px;
             border: none;
             border-radius: 48px;
-            background: $button-bg;
+            background: $grey-3;
           }
 
         }

@@ -2,14 +2,14 @@ import styles from './YourPage.module.scss';
 import logo from '../../../../assets/img/content/sidebar/con.svg';
 import dialog from '../../../../assets/img/content/sidebar/dialog.svg';
 import bell from '../../../../assets/img/content/sidebar/bells.svg';
+import basic from '../../../../assets/img/content/sidebar/basic.svg';
 
 const YourPage = ()=> {
     return (<div className={styles.content}>
         <div className={styles.container}>
             <div className={styles.header}>
-                <p className={styles.text}>Your page</p>
+                <p>Your page</p>
                 <p>...</p>
-                <hr/>
             </div>
             <div className={styles.body}>
                 <div className={styles.info}>
@@ -25,6 +25,7 @@ const YourPage = ()=> {
                         <p>
                             <img style={{paddingRight:'6.75px'}} src={bell} alt='!'/>
                             Notifications
+                            <img style={{paddingLeft:'6px'}}  src={basic} alt='basic'/>
                         </p>
                     </div>
                 </div>
@@ -38,6 +39,11 @@ const YourPage = ()=> {
                     <p>5 likes this week</p>
                 </div>
             </div>
+        </div>
+        <div className={styles.line}></div>
+        <div className={styles.options}>
+            <p>Options</p>
+            <div></div>
         </div>
     </div>)
 }

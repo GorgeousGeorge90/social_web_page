@@ -6,7 +6,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $main-bg;
+  background-color: $blue-8;
 
   .container {
     width:$container;
@@ -14,34 +14,49 @@ header {
 
 
     .search {
+      display: flex;
+      align-items: center;
         input {
           height: 32px;
           width: 336px;
-          border: 1px solid $search-border;
+          border: 1px solid $grey-5;
           border-radius: 4px;
           box-sizing: border-box;
           padding: 5px 30px 5px 12px;
           background-image: url('../../assets/img/header/search.svg');
           background-repeat: no-repeat;
-          background-color:$search-bg;
+          background-color:$grey-1;
           background-position: right 11.75px center;
           @extend %font-base;
         }
     }
 
     nav {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr) 2fr;
-      align-items: center;
+      flex-grow: 1;
 
-      .user {
-        text-align: center;
-
-      }
 
       .panel {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap:25px;
 
+        span {
+          display: flex;
+          gap: 12.5px;
+        }
 
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: $grey-1;
+        }
+
+        a {
+          text-decoration: none;
+          color: $grey-1;
+        }
       }
 
     }
