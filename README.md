@@ -16,5 +16,5 @@ This is the typical instance of layout (only in desktop resolution)
 
 ### Contacts
 
-Deployed on:<br>
+Deployed on: https://gorgeousgeorge90.github.io/social_web_page/<br>
 For feedback:`Gambit47@yandex.ru`
